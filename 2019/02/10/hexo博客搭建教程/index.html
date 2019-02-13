@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="hexo,">
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="前言如果你和我一样是小白，那么恭喜你！看完这篇文章，你也可以拥有一个这样的博客啦！ 博客搭建准备环境1.Node.js 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 2.Git 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 3.安装Hexo，在命令行（">
-<meta name="keywords" content="php,vue.js,node.js,Redis">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo博客搭建教程">
 <meta property="og:url" content="http://yoursite.com/2019/02/10/hexo博客搭建教程/index.html">
 <meta property="og:site_name" content="xyj&#39;s Blog">
 <meta property="og:description" content="前言如果你和我一样是小白，那么恭喜你！看完这篇文章，你也可以拥有一个这样的博客啦！ 博客搭建准备环境1.Node.js 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 2.Git 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 3.安装Hexo，在命令行（">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-10T13:55:15.527Z">
+<meta property="og:updated_time" content="2019-02-13T00:58:43.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo博客搭建教程">
 <meta name="twitter:description" content="前言如果你和我一样是小白，那么恭喜你！看完这篇文章，你也可以拥有一个这样的博客啦！ 博客搭建准备环境1.Node.js 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 2.Git 下载，并安装。详细步骤：https://www.simon96.online/2018/11/10/hexo-env/ 3.安装Hexo，在命令行（">
@@ -100,7 +100,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":"ture","scrollpercent":"ture","onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -335,6 +335,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -394,7 +416,13 @@
 <li>站点配置文件：站点目录下的_config.yml。</li>
 </ul>
 <pre><code>路径为&lt;folder&gt;\_config.yml
-</code></pre>
+</code></pre><p>2.启动服务器。在路径下，命令行（即Git Bash）输入以下命令，运行即可：</p>
+<blockquote>
+<p>hexo server</p>
+</blockquote>
+<p>3.浏览器访问网址： <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>至此，您的Hexo博客环境已准备完毕。</p>
+
       
     </div>
     
@@ -404,10 +432,45 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/微信二维码.jpg" alt="Mr.xyj 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/微信二维码.jpg" alt="Mr.xyj 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
       
 
       
@@ -509,7 +572,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -520,7 +583,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -531,7 +594,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -580,7 +643,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客搭建"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备环境"><span class="nav-number">2.1.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注："><span class="nav-number">2.2.</span> <span class="nav-text">注：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客搭建"><span class="nav-number">2.</span> <span class="nav-text">博客搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#准备环境"><span class="nav-number">2.1.</span> <span class="nav-text">准备环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注："><span class="nav-number">2.2.</span> <span class="nav-text">注：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
             
 
           </div>
@@ -588,6 +651,13 @@
       <!--/noindex-->
       
 
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -655,11 +725,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
